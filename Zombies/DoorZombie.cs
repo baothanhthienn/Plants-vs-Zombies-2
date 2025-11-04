@@ -7,8 +7,8 @@ namespace CustomProgram.Zombies
 
         public DoorZombie() : base("Door Zombie", "shieldzombie.png")
         {
-            int row = SplashKit.Rnd(0, 5);
-            if (row == 4)
+            int row = SplashKit.Rnd(0, 4);
+            if (row == 3)
             {
                 Y = 120 + 95 * row;
             }
@@ -39,8 +39,8 @@ namespace CustomProgram.Zombies
             SplashKit.SpriteSetX(Sprite, (float)X);
             SplashKit.SpriteSetY(Sprite, (float)Y);
             SplashKit.SpriteSetVelocity(Sprite, Vel);
-            SplashKit.SpriteAddLayer(Sprite, new Bitmap("Normal Zombie", "normalzombie.png"), "Normal Zombie");
-            SplashKit.SpriteAddLayer(Sprite, new Bitmap("Normal Zombie Attack", "NormalZombieAttack.png"), "Attack");
+            SplashKit.SpriteAddLayer(Sprite, new Bitmap("Normal Zombie", "Resources/images/normalzombie.png"), "Normal Zombie");
+            SplashKit.SpriteAddLayer(Sprite, new Bitmap("Normal Zombie Attack", "Resources/images/NormalZombieAttack.png"), "Attack");
         }
 
         public override void ChangeLayer()

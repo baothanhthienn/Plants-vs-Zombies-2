@@ -8,10 +8,15 @@ namespace CustomProgram
         private int _existTime;
         public Sun(SunFlower sunflower) : this(sunflower.X, sunflower.Y)
         {
-           
+
         }
 
-        public Sun(double x, double y) : base("Single Sun", "Sun_1.png")
+        public Sun(TwinSunFlower twinsunflower) : this(twinsunflower.X, twinsunflower.Y)
+        {
+
+        }
+
+        public Sun(double x, double y) : base("Single Sun", "sun.png")
         {
             X = x;
             Y = y;

@@ -77,7 +77,7 @@ namespace CustomProgram.Factory
         private Zombie CreateRandomZombie()
         {
             ZombieFactory zombieFactory;
-            switch (SplashKit.Rnd(0, 4))
+            switch (SplashKit.Rnd(0, 5))
             {
                 case 0:
                     zombieFactory = new FactoryNormalZombie();
@@ -90,6 +90,9 @@ namespace CustomProgram.Factory
                     return zombieFactory.GetZombie();
                 case 3:
                     zombieFactory = new FactoryDoorZombie();
+                    return zombieFactory.GetZombie();
+                case 4: 
+                    zombieFactory = new FactoryZombieFootball();
                     return zombieFactory.GetZombie();
 
             }

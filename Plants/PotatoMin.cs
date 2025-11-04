@@ -17,8 +17,8 @@ namespace CustomProgram.Plants
             IsExplode = false;
             SplashKit.SpriteSetX(Sprite, (float)X - 20);
             SplashKit.SpriteSetY(Sprite, (float)Y - 40);
-            Sprite.AddLayer(new Bitmap("Potato Mine", "PotatoMine.png"), "Potato Mine");
-            Sprite.AddLayer(new Bitmap("Potato Mine Explode", "PotatoMineExplode.png"), "Exploded");
+            Sprite.AddLayer(new Bitmap("Potato Mine", "Resources/images/PotatoMine.png"), "Potato Mine");
+            Sprite.AddLayer(new Bitmap("Potato Mine Explode", "Resources/images/PotatoMineExplode.png"), "Exploded");
         }
 
         public int PlantedTime //time since it planted

@@ -12,3 +12,4 @@
 /Users/phamnguyengiabao/Documents/COS 20007/Custom Program/obj/Debug/net9.0/Custom_Program.pdb
 /Users/phamnguyengiabao/Documents/COS 20007/Custom Program/obj/Debug/net9.0/Custom_Program.genruntimeconfig.cache
 /Users/phamnguyengiabao/Documents/COS 20007/Custom Program/obj/Debug/net9.0/ref/Custom_Program.dll
+/Users/phamnguyengiabao/Documents/COS 20007/Custom Program/obj/Debug/net9.0/Custom_Program.sourcelink.json

@@ -8,18 +8,18 @@ namespace CustomProgram
     public class ChosenCards 
     {
         List<Card> _chosenCards;
-        //This constructor is used for ChooseSeedState
+        //This constructor is used for ChooseSeedStage
         public ChosenCards()
         {
-            _chosenCards = new List<Card>(); //The list of cards in ChoseSeedState is initial empty
+            _chosenCards = new List<Card>(); //The list of cards in ChoseSeedStage is initial empty
         }
 
-        //This constructor is used for IngameState
+        //This constructor is used for IngameStage
         public ChosenCards(List<Card> chosenList) :this()
         {
             foreach (Card card in chosenList)
             {
-                _chosenCards.Add((Card)Activator.CreateInstance(card.GetType())); //this list of card will be chosen in IngameState
+                _chosenCards.Add((Card)Activator.CreateInstance(card.GetType())); //this list of card will be chosen in IngameStage
             }
         }
         public void DrawCardsInGame()

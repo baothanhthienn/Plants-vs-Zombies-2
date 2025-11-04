@@ -14,6 +14,7 @@ namespace CustomProgram
             _inventoryCards = new List<Card>();
             _inventoryCards.Add(new CardPeaShooter());
             _inventoryCards.Add(new CardSunFlower());
+            _inventoryCards.Add(new CardTwinSunFlower());
             _inventoryCards.Add(new CardSnowpea());
             _inventoryCards.Add(new CardRepeater());
             _inventoryCards.Add(new CardPotatoMine());

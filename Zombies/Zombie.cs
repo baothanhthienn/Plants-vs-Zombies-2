@@ -8,7 +8,7 @@ namespace CustomProgram.Zombies
         private int _health;
         private Vector2D _vel;
         private int _damage;
-        private bool _isEating;
+        private bool _IsEating;
         private int _row;
         private int _chewingTime;
         private int _stunningTime;
@@ -19,7 +19,7 @@ namespace CustomProgram.Zombies
         public Zombie(string name, string filename) : base(name, filename)
         {
             _vel = new Vector2D();
-            IsEating = false;
+            _IsEating = false;
             _isSlow = false;
             _isBlowedByMine = false;
         }
@@ -110,11 +110,11 @@ namespace CustomProgram.Zombies
         {
             get
             {
-                return _isEating;
+                return _IsEating;
             }
             set
             {
-                _isEating = value;
+                _IsEating = value;
             }
         }
 

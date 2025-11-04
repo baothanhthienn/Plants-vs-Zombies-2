@@ -65,7 +65,7 @@ namespace CustomProgram.Buttons
             if (_isClicked)
             {
                 _buttonState = ButtonState.Click;
-                if (_isClickedTime == 14)
+                if (_isClickedTime >= 15)
                 {
                     _isClicked = false;
                 }

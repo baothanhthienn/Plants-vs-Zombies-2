@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SplashKitSDK;
+using System.IO;
 
 namespace CustomProgram
 {
@@ -15,7 +16,8 @@ namespace CustomProgram
         private double _y;
         public GameObject(string name, string filename)
         {
-            _bitmap = new Bitmap(name, filename);
+            string imagePath = filename.Contains("/") ? filename : Path.Combine("Resources/images", filename);
+            _bitmap = new Bitmap(name, imagePath);
             _sprite = SplashKit.CreateSprite(_bitmap);
         }
 

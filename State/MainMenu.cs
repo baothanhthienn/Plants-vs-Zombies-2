@@ -16,7 +16,7 @@ namespace CustomProgram.State
             _menu = new Menu();
             _buttonA = new ButtonA();
             _gameWindow = window;
-            _music = SplashKit.LoadMusic("Menu", "MenuTheme.mp3");
+            _music = SplashKit.LoadMusic("Menu", "Resources/sounds/MenuTheme.mp3");
             _button = new ButtonA();
         }
         public void NextState()
@@ -32,10 +32,11 @@ namespace CustomProgram.State
         {
             SplashKit.ProcessEvents();
             _gameWindow.Clear(Color.White);
+           
             if (!SplashKit.MusicPlaying()) SplashKit.PlayMusic(_music, 1, 0.5f);
-            SplashKit.DrawAllSprites();
             _button.CheckButtonState();
             _button.Draw();
+            SplashKit.DrawAllSprites();
             if (_button.IsClickedTime >= 15)
             {
                 FreeAllSprites();
