@@ -3261,3 +3261,4 @@
 (29/10/2025) WARNING -> Error trying to draw bitmap: passed in bmp is an invalid bitmap pointer. [raised in images.cpp:230]
 (29/10/2025) WARNING -> Error trying to draw bitmap: passed in bmp is an invalid bitmap pointer. [raised in images.cpp:230]
 (29/10/2025) WARNING -> Error trying to draw bitmap: passed in bmp is an invalid bitmap pointer. [raised in images.cpp:230]
+(05/11/2025) WARNING -> Attempting to free invalid sprite [raised in sprites.cpp:259]

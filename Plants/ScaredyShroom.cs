@@ -13,7 +13,7 @@ namespace CustomProgram.Plants
         private int _cooldownCounter;
         private int _plantedTime;
 
-        public ScaredyShroom(double x, double y) : base("ScaredyShroom", "Scaredy.png")
+        public ScaredyShroom(double x, double y) : base("ScaredyShroom", "Scaredy-shroom.png")
         {
             X = x;
             Y = y;
@@ -55,7 +55,7 @@ namespace CustomProgram.Plants
                 if (zombie.Row == Row)
                 {
                     double distance = zombie.Sprite.X - Sprite.X;
-                    if (distance < 400 && distance > 0) // within range, ahead
+                    if (distance < 600 && distance > 0) // within range, ahead
                     {
                         zombieNearby = true;
                         break;
