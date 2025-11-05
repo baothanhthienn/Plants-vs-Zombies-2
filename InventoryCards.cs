@@ -21,6 +21,7 @@ namespace CustomProgram
             _inventoryCards.Add(new CardWallnut());
             _inventoryCards.Add(new CardSoldierPea());
             _inventoryCards.Add(new CardElectricPeashooter());
+            _inventoryCards.Add(new CardScaredyShroom());
 
         }
         public List<Card> InventoryCard
@@ -32,15 +33,23 @@ namespace CustomProgram
         }
         public void DrawInventoryCard()
         {
-            for (int i =0; i< _inventoryCards.Count; i++)
+            int cardsPerRow = 8;           // max cards before wrapping to next row
+            int cardWidth = 74;            // horizontal space between cards
+            int cardHeight = 92;           // vertical space between rows
+            int startX = 350;              // starting X position
+            int startY = 160;              // starting Y position (top row)
+
+            for (int i = 0; i < _inventoryCards.Count; i++)
             {
-                SplashKit.SpriteSetX(_inventoryCards[i].Sprite, 350 + i * 74);
-                SplashKit.SpriteSetY(_inventoryCards[i].Sprite, 160 + (i / 8) * 92);
+                int row = i / cardsPerRow;          // row index (0, 1, 2…)
+                int col = i % cardsPerRow;          // column index (0–7)
+                float x = startX + col * cardWidth;
+                float y = startY + row * cardHeight;
+
+                SplashKit.SpriteSetX(_inventoryCards[i].Sprite, x);
+                SplashKit.SpriteSetY(_inventoryCards[i].Sprite, y);
             }
         }
-
-     
-
 
     }
 }

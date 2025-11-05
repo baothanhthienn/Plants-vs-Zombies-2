@@ -70,26 +70,31 @@ namespace CustomProgram.State {
                 {
                     PickCard(point);
                 }
+                // second row display card  
+                else if (point.X >= 350 && point.X <= 1000 && point.Y >= 270 && point.Y <= 360)
+                {
+                    PickCard(point);
+                }
                 else if (SplashKit.SpritePointCollision(_selectedButton.Sprite, point))
-                {
-                    if (_selectedCard != null)
-                    {
-                        _chosenCards.Add(_selectedCard);
-                        _selectedCard = null;
-                    }
-                }
-                else if (point.X >= 0 && point.X <= 785 && point.Y >= 6 && point.Y <= 91)
-                {
-                    DeselectCard(point);                                                            //deselecting card
-                }
-                else if (SplashKit.SpritePointCollision(_deselectedButton.Sprite, point))
-                {
-                    if (_deselectedCard != null)
-                    {
-                        _chosenCards.Remove(_deselectedCard);
-                        _deselectedCard = null;
-                    }
-                }
+                        {
+                            if (_selectedCard != null)
+                            {
+                                _chosenCards.Add(_selectedCard);
+                                _selectedCard = null;
+                            }
+                        }
+                        else if (point.X >= 0 && point.X <= 785 && point.Y >= 6 && point.Y <= 91)
+                        {
+                            DeselectCard(point);                                                            //deselecting card
+                        }
+                        else if (SplashKit.SpritePointCollision(_deselectedButton.Sprite, point))
+                        {
+                            if (_deselectedCard != null)
+                            {
+                                _chosenCards.Remove(_deselectedCard);
+                                _deselectedCard = null;
+                            }
+                        }
             }
 
             foreach (Button button in _buttons)                    //button to change to menu state

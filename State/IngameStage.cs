@@ -128,6 +128,7 @@ namespace CustomProgram.State
                 RemoveSuns();
                 ZombieStateInGame();
                 PotatoMineStateInGame();
+                ScaredyShroom_Active();
                 ShooterPlantLoading();
                 CheckPeasHitZombies();
                 CheckMinesBlowZombies();
@@ -152,6 +153,7 @@ namespace CustomProgram.State
                 }
             }
             _gameWindow.Refresh(60);
+            ScaredyShroom_Active();
         }
         public void FreeAllMusics()
         {
@@ -224,6 +226,11 @@ namespace CustomProgram.State
                 {
                     plant = new ElectricPeashooter(cell.Point.X, cell.Point.Y);
                     _shooterPlants.Add(plant as ElectricPeashooter);
+                }
+                else if (_selectedCard.GetType().Equals(typeof(CardScaredyShroom)))
+                {
+                    plant = new ScaredyShroom(cell.Point.X, cell.Point.Y);
+                    _shooterPlants.Add(plant as ScaredyShroom);
                 }
 
                 _plants.Add(plant);
@@ -376,6 +383,18 @@ namespace CustomProgram.State
             foreach (Wallnut wallnut in _wallnuts)
             {
                 wallnut.ChangeLayer();
+            }
+        }
+
+        public void ScaredyShroom_Active()
+        {
+            // Check for ScaredyShroom in both _plants and _shooterPlants
+            foreach (var shooter in _shooterPlants)
+            {
+                if (shooter is ScaredyShroom scaredy)
+                {
+                    scaredy.Update(_zombies);
+                }
             }
         }
 
