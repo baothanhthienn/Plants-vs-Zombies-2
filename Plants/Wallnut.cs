@@ -11,7 +11,7 @@ namespace CustomProgram.Plants
             Y = y;
             Health = 300;
             SplashKit.SpriteSetX(Sprite, (float)X - 20);
-            SplashKit.SpriteSetY(Sprite, (float)Y - 50);
+            SplashKit.SpriteSetY(Sprite, (float)Y - 10);
             Sprite.AddLayer(new Bitmap("Wallnut Cracked 1", "Resources/images/Wallnut_cracked1.png"), "Cracked 1");
             Sprite.AddLayer(new Bitmap("Wallnut Cracked 2", "Resources/images/Wallnut_cracked2.png"), "Cracked 2");
         }

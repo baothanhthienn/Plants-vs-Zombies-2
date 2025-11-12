@@ -26,8 +26,8 @@ namespace CustomProgram.Plants
             Sprite.AddLayer(new Bitmap("Scaredy", "Resources/images/Scaredy.png"), "Hide");
             Sprite.AddLayer(new Bitmap("Scaredyshroom", "Resources/images/Scaredy-shroom.png"), "Active");
 
-            SplashKit.SpriteSetX(Sprite, (float)X - 20);
-            SplashKit.SpriteSetY(Sprite, (float)Y - 40);
+            SplashKit.SpriteSetX(Sprite, (float)X - 40);
+            SplashKit.SpriteSetY(Sprite, (float)Y - 10);
         }
 
          public int PlantedTime //time since it planted

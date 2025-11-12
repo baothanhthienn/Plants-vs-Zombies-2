@@ -8,7 +8,7 @@ namespace CustomProgram.Bullets
         public ToxicScaredy(double x, double y) : base("Toxic Scaredy", "toxic.png")
         {
             X = x + 25;
-            Y = y - 40;
+            Y = y + 20;
             Damage = 10;
             SplashKit.SpriteSetVelocity(Sprite, Vel);
             SplashKit.SpriteSetX(Sprite, (float)X);

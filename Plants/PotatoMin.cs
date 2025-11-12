@@ -16,7 +16,7 @@ namespace CustomProgram.Plants
             _damage = 500;
             IsExplode = false;
             SplashKit.SpriteSetX(Sprite, (float)X - 20);
-            SplashKit.SpriteSetY(Sprite, (float)Y - 40);
+            SplashKit.SpriteSetY(Sprite, (float)Y - 10);
             Sprite.AddLayer(new Bitmap("Potato Mine", "Resources/images/PotatoMine.png"), "Potato Mine");
             Sprite.AddLayer(new Bitmap("Potato Mine Explode", "Resources/images/PotatoMineExplode.png"), "Exploded");
         }

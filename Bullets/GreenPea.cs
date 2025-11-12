@@ -8,7 +8,7 @@ namespace CustomProgram.Bullets
         public GreenPea(double x, double y) : base("Green Pea", "pea.png")
         {
             X = x + 25;
-            Y = y - 40;
+            Y = y - 10;
             Damage = 10;
             SplashKit.SpriteSetVelocity(Sprite, Vel);
             SplashKit.SpriteSetX(Sprite, (float)X);

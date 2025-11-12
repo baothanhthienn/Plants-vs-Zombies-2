@@ -8,7 +8,7 @@ namespace CustomProgram.Bullets
         public IcePea(ShooterPlant shooter) : base("Ice Pea", "peaice.png") //Construtor for IcePea class
         {
             X = shooter.X + 25;
-            Y = shooter.Y - 40;
+            Y = shooter.Y - 10;
             Damage = 10;
             SplashKit.SpriteSetVelocity(Sprite, Vel);
             SplashKit.SpriteSetX(Sprite, (float)X);

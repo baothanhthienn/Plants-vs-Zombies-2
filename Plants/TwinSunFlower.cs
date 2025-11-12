@@ -11,8 +11,8 @@ namespace CustomProgram.Plants
         {
             X = x;
             Y = y;
-            SplashKit.SpriteSetX(Sprite, (float)X - 15);
-            SplashKit.SpriteSetY(Sprite, (float)Y - 35);
+            SplashKit.SpriteSetX(Sprite, (float)X - 20);
+            SplashKit.SpriteSetY(Sprite, (float)Y - 10);
             _cooldown = 0;
             _sunGenTime = SplashKit.Rnd(500, 700);
         }

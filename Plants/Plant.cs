@@ -38,7 +38,7 @@ namespace CustomProgram.Plants
         {
             get
             {
-                return (int)Math.Ceiling((Y - 145) / 110);
+                return (int)Math.Ceiling((Y - 150) / 105);
             }
         }
 

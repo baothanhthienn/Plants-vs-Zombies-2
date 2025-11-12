@@ -8,7 +8,7 @@ namespace CustomProgram.Bullets
         public LightningPea(ShooterPlant shooter) : base("Electric Pea", "lightningpea.png") //Construtor for LightningPea class    
         {
             X = shooter.X + 25;
-            Y = shooter.Y - 40;
+            Y = shooter.Y - 10;
             Damage = 15;
             SplashKit.SpriteSetVelocity(Sprite, Vel);
             SplashKit.SpriteSetX(Sprite, (float)X);

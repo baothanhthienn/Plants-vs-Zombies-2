@@ -19,24 +19,24 @@ namespace CustomProgram
 
         public void DrawPlayerSun(float sun)
         {
-            SplashKit.DrawText(string.Format("{0}",sun) , Color.Black, 320, 80);
+            SplashKit.DrawText(string.Format("{0}",sun) , Color.Red, 320, 80);
         }
 
         public void DrawRemainingZombies(float zombsleft)
         {
-            SplashKit.DrawText(string.Format("Remaining zombies: {0}", zombsleft), Color.Black, 950, 30);
+            SplashKit.DrawText(string.Format("Remaining zombies: {0}", zombsleft), Color.Red, 950, 30);
         }
 
         public void GenerateCell() //generate cell for map
         {
             if (_cells.Count > 0) return;
-            float initialcellX = 445;
-            float initialcellY = 145;
-            float cellWidth = 90;
-            float cellHeight = 110;
+            float initialcellX = 520;
+            float initialcellY = 150;
+            float cellWidth = 100;
+            float cellHeight = 105;
             for (float x=0; x<5; x++)
             {
-                for (float y=0; y<10; y++)
+                for (float y=0; y<9; y++)
                 {
                     Point2D point = new Point2D();
                     point.X = initialcellX + cellWidth * y;

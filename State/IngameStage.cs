@@ -51,7 +51,7 @@ namespace CustomProgram.State
             _wallnuts = new List<Wallnut>();
             _zombieFactory = new ZombieFactoryCreator();
             _timer = SplashKit.CreateTimer("timer");
-            _zombieLeft = 100;
+            _zombieLeft = 200;
             _endGame = false;
             _musicIndex = 0;
             SplashKit.StartTimer(_timer);
@@ -137,6 +137,8 @@ namespace CustomProgram.State
                 _chosenCard.DrawCardsInGame();
                 SplashKit.UpdateAllSprites();
                 SplashKit.DrawAllSprites();
+                _map.DrawPlayerSun(_initialSun);
+                _map.DrawRemainingZombies(_zombieLeft);
                 CheckEndGame();
             }
             else
@@ -300,16 +302,21 @@ namespace CustomProgram.State
                     _suns.Add(new Sun(SplashKit.Rnd(450, 1200), SplashKit.Rnd(130, 700)));
                 }
             }
+
+            foreach (Sun sun in _suns)
+            {
+                sun.FallDown();
+            }
         }
         public void GenerateZombie() //generate zombie 
-        {
+        {     
             Zombie zombie = _zombieFactory.CreateZombie(_timer);
             if (zombie != null)
             {
                 _zombies.Add(zombie);
                 _zombieLeft--;
             }
-        }
+        }  
         public void ShooterPlantLoading()  //check if shooter plants are ready to shoot
         {
             foreach (ShooterPlant shooter in _shooterPlants)

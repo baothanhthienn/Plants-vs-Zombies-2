@@ -11,7 +11,7 @@ namespace CustomProgram.Plants
             Y = y;
             Health = 100;
             SplashKit.SpriteSetX(Sprite, (float)X - 20);
-            SplashKit.SpriteSetY(Sprite, (float)Y - 40);
+            SplashKit.SpriteSetY(Sprite, (float)Y - 10);
         }
 
 
