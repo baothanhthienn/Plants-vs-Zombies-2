@@ -4,7 +4,7 @@ namespace CustomProgram.Cards
     {
         public CardScaredyShroom() : base("Scaredy Shroom Card", "ScaredyShroom_card.png")
         {
-            SunCost = 0;
+            SunCost = 25;
         }
     }
 }

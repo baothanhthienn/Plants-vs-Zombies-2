@@ -316,6 +316,7 @@ namespace CustomProgram.State
                 _zombies.Add(zombie);
                 _zombieLeft--;
             }
+            
         }  
         public void ShooterPlantLoading()  //check if shooter plants are ready to shoot
         {

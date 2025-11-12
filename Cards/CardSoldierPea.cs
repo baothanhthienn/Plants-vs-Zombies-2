@@ -4,7 +4,7 @@ namespace CustomProgram.Cards
     {
         public CardSoldierPea() : base("Soldier Pea", "soldierpea_card1.png")
         {
-            SunCost = 0;
+            SunCost = 300;
         }
     }
 }

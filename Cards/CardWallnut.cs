@@ -10,7 +10,7 @@ namespace CustomProgram.Cards
     {
         public CardWallnut() : base("Wallnut Card", "wallnut_card1.png")
         {
-            SunCost = 0;
+            SunCost = 50;
         }
     }
 }

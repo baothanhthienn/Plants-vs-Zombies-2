@@ -4,7 +4,7 @@ namespace CustomProgram.Cards
     {
         public CardRepeater() : base("Repeater Card", "repeater_card1.png")
         {
-            SunCost = 0;
+            SunCost = 200;
         }
     }
 }

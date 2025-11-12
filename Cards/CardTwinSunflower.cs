@@ -4,7 +4,7 @@ namespace CustomProgram.Cards
     {
         public CardTwinSunFlower() : base("TwinSunFlower Card", "Twin_Sunflower_card.png")
         {
-            SunCost = 0;
+            SunCost = 100;
         }
 
     }

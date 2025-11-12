@@ -573,7 +573,7 @@
 │       └── Winningmusic.mp3
 ├── SeedChosenPanel.cs
 ├── State
-│   ├── ChooseSeedState.cs
+│   ├── ChooseSeedStage.cs
 │   ├── GameStage.cs
 │   ├── IngameStage.cs
 │   └── MainMenu.cs
