@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/phamnguyengiabao/Documents/COS 20007/Custom Program/Custom_Program.csproj",
+      "projectUniqueName": "/Users/phamnguyengiabao/Documents/COS 20007/Custom Program/Plants-vs-Zombies-2/Custom_Program.csproj",
       "projectName": "Custom_Program",
-      "projectPath": "/Users/phamnguyengiabao/Documents/COS 20007/Custom Program/Custom_Program.csproj",
+      "projectPath": "/Users/phamnguyengiabao/Documents/COS 20007/Custom Program/Plants-vs-Zombies-2/Custom_Program.csproj",
       "packagesPath": "/Users/phamnguyengiabao/.nuget/packages/",
-      "outputPath": "/Users/phamnguyengiabao/Documents/COS 20007/Custom Program/obj/",
+      "outputPath": "/Users/phamnguyengiabao/Documents/COS 20007/Custom Program/Plants-vs-Zombies-2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/phamnguyengiabao/.nuget/NuGet/NuGet.Config"
